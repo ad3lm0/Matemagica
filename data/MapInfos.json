@@ -1,4 +1,6 @@
 [
 null,
-{"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":459,"scrollY":312.5}
+{"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":1092,"scrollY":607.3333333333334},
+{"id":2,"expanded":false,"name":"Escola abandonada","order":3,"parentId":1,"scrollX":1081.3333333333333,"scrollY":607.3333333333334},
+{"id":3,"expanded":false,"name":"Sala de aula da escola","order":2,"parentId":1,"scrollX":1092,"scrollY":607.3333333333334}
 ]
