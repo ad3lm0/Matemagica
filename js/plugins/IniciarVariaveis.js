@@ -6,35 +6,34 @@
  *
  */
 
- ( function(){
+ ( function() {
 
  	var _Game_Interpreter_pluginCommand = Game_Interpreter.prototype.pluginCommand;
 
  	Game_Interpreter.prototype.pluginCommand = function(command, args) {
     
-    	_Game_Interpreter_pluginCommand.call(this, command, args);
+    	_Game_Interpreter_pluginCommand.call(this, command, args);        
 
     	if(command == "iniciarVariavel"){
     		var varNum = Number(args[0]);
     		var max = Number(args[1]);
 
-    		$gameVariables.setValue(varNum, randomNumber(max));	
+            $gameVariables.setValue(varNum, randomNumber(max));	                   
+            
 
-
-    		//apagar depois
-			$gameMessage.add(String($gameVariables.value(varNum);));
     	}
 
-    	if(command == 'Total'){
-    		var val1 = $gameVariables.value(Number(args[0]));
-    		var val2 = $gameVariables.value(Number(args[1]));
-    		var operacao = Number(args[2]);
+    	if(command == 'total'){
+    		var val1 = $gameVariables.value(0001);
+    		var val2 = $gameVariables.value(0002);
+    		var operacao = Number(args[0]);
     		var total = 0;
     		var aux = true;
+            
 
     		switch(operacao){
     			case 1:
-    				total = val1 + val2;
+    				total = val1 + val2;                    
     				break;
     			case 2:
     				if (val1 < val2){
@@ -47,12 +46,12 @@
 	    				}	    				
 	    			}
 
-	    			total = val1 - val2;
+	    			total = val1 - val2;                    
     				break;    				
     			
     			case 3:
 
-    				total = val1 * val2;
+    				total = val1 * val2;                   
     				break;
     			case 4:
 
@@ -84,15 +83,16 @@
     			default:
     				total = 1;
     		}
-    		
-    		$gameVariables.setValue(0003, total);
-    		$gameVariables.setValue(0004, randomNumber(total+200));
-    		$gameVariables.setValue(0005, randomNumber(total+100));
-    		$gameVariables.setValue(0006, randomNumber(total+50));
-    		$gameVariables.setValue(0007, randomNumber(total));
-    		$gameVariables.setValue(0008, randomNumber(total));
 
-    		var arrayVal = new Array(
+                $gameVariables.setValue(0003, total);
+                $gameVariables.setValue(0004, randomNumber(total+100));
+                $gameVariables.setValue(0005, randomNumber(total+50));
+                $gameVariables.setValue(0006, randomNumber(total+25));
+                $gameVariables.setValue(0007, randomNumber(total));
+                $gameVariables.setValue(0008, randomNumber(total));
+    		    		
+
+    		arrayVal = new Array(
     			Number($gameVariables.value(0003)),
     			Number($gameVariables.value(0004)),
     			Number($gameVariables.value(0005)),
@@ -106,8 +106,9 @@
     			var funcArray = arrayVal.slice(0);
     			aux = notDuplicates(funcArray);
     		}
+            
     	}
-	};
+	}
 
 	function notDuplicates(array) {
 	    var valuesSoFar = [];
@@ -132,7 +133,7 @@
 
  	
  	function randomNumber(max){
-    	return Math.floor(Math.random() * (max - 1) + 1;);
+    	return Math.floor(Math.random() * (max - 1) + 1);
 	}
 
  })();
