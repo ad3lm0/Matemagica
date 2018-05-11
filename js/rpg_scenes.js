@@ -509,7 +509,7 @@ Scene_Title.prototype.createCommandWindow = function() {
 Scene_Title.prototype.commandNewGame = function() {
     DataManager.setupNewGame();
     this._commandWindow.close();
-    this.fadeOutAll();
+    //this.fadeOutAll();
     SceneManager.goto(Scene_Map);
 };
 
