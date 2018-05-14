@@ -515,7 +515,10 @@ Scene_Title.prototype.commandNewGame = function() {
 
 Scene_Title.prototype.commandContinue = function() {
     this._commandWindow.close();
-    SceneManager.push(Scene_Load);
+    //SceneManager.push(Scene_Load);
+    //AQUI
+    DataManager.loadGame(1);
+    SceneManager.goto(Scene_Map);
 };
 
 Scene_Title.prototype.commandOptions = function() {

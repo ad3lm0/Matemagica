@@ -1,13 +1,16 @@
 [
 null,
-{"id":1,"expanded":true,"name":"CharacterMain","order":1,"parentId":0,"scrollX":1765.0909090909092,"scrollY":914.1818181818182},
-{"id":2,"expanded":false,"name":"Abandoned Classroom","order":4,"parentId":3,"scrollX":1092,"scrollY":614.6666666666666},
-{"id":3,"expanded":false,"name":"Abandoned School","order":3,"parentId":1,"scrollX":2157.3333333333335,"scrollY":1117.3333333333333},
-{"id":4,"expanded":false,"name":"School Classroom","order":2,"parentId":1,"scrollX":2157.3333333333335,"scrollY":1117.3333333333333},
-{"id":5,"expanded":true,"name":"StageOne","order":5,"parentId":1,"scrollX":2157.3333333333335,"scrollY":1117.3333333333333},
-{"id":6,"expanded":false,"name":"StageOne Boss","order":6,"parentId":5,"scrollX":2157.3333333333335,"scrollY":1117.3333333333333},
-{"id":7,"expanded":false,"name":"StageTwo Boss","order":8,"parentId":8,"scrollX":2157.3333333333335,"scrollY":1117.3333333333333},
-{"id":8,"expanded":true,"name":"StageTwo","order":7,"parentId":1,"scrollX":2157.3333333333335,"scrollY":1117.3333333333333},
-{"id":9,"expanded":true,"name":"StageFinal","order":9,"parentId":1,"scrollX":2157.3333333333335,"scrollY":1117.3333333333333},
-{"id":10,"expanded":false,"name":"StageFinal Boss","order":10,"parentId":9,"scrollX":2157.3333333333335,"scrollY":1117.3333333333333}
+{"id":1,"expanded":true,"name":"CharacterMain","order":1,"parentId":0,"scrollX":722.6666666666666,"scrollY":422},
+null,
+null,
+{"id":4,"expanded":false,"name":"School Classroom","order":9,"parentId":13,"scrollX":722.6666666666666,"scrollY":422},
+{"id":5,"expanded":false,"name":"StageOne","order":2,"parentId":1,"scrollX":1602,"scrollY":958},
+{"id":6,"expanded":false,"name":"StageOne Boss","order":3,"parentId":5,"scrollX":816,"scrollY":800},
+{"id":7,"expanded":false,"name":"StageTwo Boss","order":5,"parentId":8,"scrollX":816,"scrollY":800},
+{"id":8,"expanded":false,"name":"StageTwo","order":4,"parentId":1,"scrollX":1602,"scrollY":1082},
+{"id":9,"expanded":false,"name":"StageFinal","order":6,"parentId":1,"scrollX":1119,"scrollY":882},
+{"id":10,"expanded":false,"name":"StageFinal Boss","order":7,"parentId":9,"scrollX":801,"scrollY":838},
+{"id":11,"expanded":true,"name":"Damaged School","order":10,"parentId":1,"scrollX":1224,"scrollY":655.3333333333334},
+{"id":12,"expanded":false,"name":"Damaged Classroom","order":11,"parentId":11,"scrollX":618,"scrollY":315.5},
+{"id":13,"expanded":true,"name":"School","order":8,"parentId":1,"scrollX":1167,"scrollY":882}
 ]
