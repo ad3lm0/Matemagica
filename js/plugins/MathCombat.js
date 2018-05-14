@@ -19,30 +19,29 @@
 
     	if(command == "batalha") {    		
 	    				    	
-    			console.log("dmg_enemy ");
+    			
 	    		dmg_enemy = 20;
-	    		console.log("dmg_enemy "+dmg_enemy);
+	    		
 	    		$gameVariables.setValue(97, 0);
 
 	    		dmg_hero = Number($gameParty.members(1).hp) * 0.05;
 	    		$gameVariables.setValue(98, 0);
-	    		console.log("dmg_hero "+dmg_hero);
+	    		
 	    	
 		    	var val_op = Number(args[0]);
 	    		var operacao = 'a';
 
-	    		console.log("batalha");
-	    		console.log("iniciarVariavel");
+	    		
 	    		$gameMap._interpreter.pluginCommand('iniciarVariavel', ['1', '50']);
-	    		console.log("iniciarVariavel");
+	    		
 		    	$gameMap._interpreter.pluginCommand('iniciarVariavel', ['2', '20']);
 		    	if (val_op == 4 || val_op == 3){
-		    		console.log("iniciarVariavel");
+		    		
 		    		$gameMap._interpreter.pluginCommand('iniciarVariavel', ['2', '11']);
 		    	}
-		    	console.log("total");
+		    	
 		    	$gameMap._interpreter.pluginCommand('total', String([val_op]));
-				console.log(" fim total");
+				
 		    	var atual_enemy =  1;//$gameVariables.value(100);
 
 		    	switch(val_op) {
@@ -59,8 +58,9 @@
 		    			operacao = ' ÷ ';
 		    			break;
 		    	 }
-				$gameMessage.add(Number($gameVariables.value(0001))  + operacao + Number($gameVariables.value(0002)) 
-			    		+ ' = ');
+
+				$gameMessage.add('Quanto é ' + Number($gameVariables.value(0001))  + operacao + Number($gameVariables.value(0002)) 
+			    		+ ' ?');
 				
 				console.log("choices");
 			    var choices = new Array(
@@ -76,19 +76,19 @@
 		    	$gameMap._interpreter.setupChoices([choices], -1, -1);
 		    	this.setWaitMode('message');
 
-		    	console.log("setChoiceCallback");
+		    	
 
 	    		$gameMessage.setChoiceCallback(function(responseIndex) {
 	    			if (Number(choices[responseIndex]) == Number($gameVariables.value(0003))){
 
 	    				$gameVariables.setValue(100, 0);
 	    				console.log($gameVariables.value(100));
-	    				setTimeout(function(){$gameMessage.add('Acerto mize');}, 1);
+	    				setTimeout(function(){$gameMessage.add('Otímo, você acertou!');}, 1);
 	    			} else {
 
 	    				$gameVariables.setValue(100, 1);	
 	    				console.log($gameVariables.value(100));			
-		    			setTimeout(function(){$gameMessage.add('Errou bobão');}, 1);
+		    			setTimeout(function(){$gameMessage.add('Vixe, você errou.');}, 1);
 		    			}
 					});
 

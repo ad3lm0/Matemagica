@@ -15,12 +15,12 @@
     	_Game_Interpreter_pluginCommand.call(this, command, args);        
 
     	if(command == "iniciarVariavel"){
-            console.log("iniciando "+ Number(args[0]));
+            
     		var varNum = Number(args[0]);
     		var max = Number(args[1]);
 
             $gameVariables.setValue(varNum, randomNumber(max));	                   
-            console.log("Saindo "+ Number(args[0]));
+           
 
     	}
 
@@ -34,7 +34,7 @@
 
     	if(command == 'total'){
 
-            console.log("Iniciando total ");
+            
     		var val1 = $gameVariables.value(0001);
     		var val2 = $gameVariables.value(0002);
             console.log("val1 " + val1 + ' val2 '+ val2);
@@ -62,7 +62,7 @@
 	    					}
 	    				}	    				
 	    			}
-                    console.log("contagem de total ");
+                   
 
 	    			total = val1 - val2;                    
     				break;    				
@@ -128,7 +128,7 @@
     		aux = true;
 
     		while(aux){
-                console.log("notDuplicates");    			
+               			
     			aux = notDuplicates(arrayVal);
     		}
             
