@@ -18,8 +18,8 @@
    
 
     	if(command == "batalha") {    		
-	    				    	
-    			
+	    		
+
 	    		dmg_enemy = 20;
 	    		
 	    		$gameVariables.setValue(97, 0);
