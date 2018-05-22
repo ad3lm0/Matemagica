@@ -510,13 +510,14 @@ Scene_Title.prototype.commandNewGame = function() {
     DataManager.setupNewGame();
     this._commandWindow.close();
     //this.fadeOutAll();
+    //AQUI: Remover o fade do som na tela de título;
     SceneManager.goto(Scene_Map);
 };
 
 Scene_Title.prototype.commandContinue = function() {
     this._commandWindow.close();
     //SceneManager.push(Scene_Load);
-    //AQUI
+    //AQUI: Remover a tela de load, setar diretamente um arquivo de load específico;
     DataManager.loadGame(1);
     SceneManager.goto(Scene_Map);
 };
