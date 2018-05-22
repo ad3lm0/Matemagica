@@ -20,12 +20,6 @@
     	if(command == "batalha") {    		
 	    		
 
-	    		dmg_enemy = 20;
-	    		
-	    		$gameVariables.setValue(97, 0);
-
-	    		dmg_hero = Number($gameParty.members(1).hp) * 0.05;
-	    		$gameVariables.setValue(98, 0);
 	    		
 	    	
 		    	var val_op = Number(args[0]);
