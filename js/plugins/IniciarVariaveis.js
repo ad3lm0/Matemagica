@@ -19,7 +19,9 @@
     		var varNum = Number(args[0]);
     		var max = Number(args[1]);
 
-            $gameVariables.setValue(varNum, randomNumber(max));	                   
+            console.log("iniciarVariavel - Max: " + max);          
+            $gameVariables.setValue(varNum, randomNumber(max));	     
+
            
 
     	}
@@ -37,7 +39,6 @@
             
     		var val1 = $gameVariables.value(0001);
     		var val2 = $gameVariables.value(0002);
-            console.log("val1 " + val1 + ' val2 '+ val2);
     		var operacao = Number(args[0]);
     		var total = 0;
     		var aux = true;
@@ -103,17 +104,11 @@
     		}
                 
                 $gameVariables.setValue(0003, total);
-                console.log("3 " + total);
                 $gameVariables.setValue(0004, randomNumber(total+100));
-                console.log("4 " + $gameVariables.value(0004));
                 $gameVariables.setValue(0005, randomNumber(total+50));
-                console.log("5 " + $gameVariables.value(0005));
                 $gameVariables.setValue(0006, randomNumber(total+25));
-                console.log("6 " + $gameVariables.value(0006));
                 $gameVariables.setValue(0007, randomNumber(total));
-               console.log("7 " + $gameVariables.value(0007));
                 $gameVariables.setValue(0008, randomNumber(total));
-                 console.log("8 " + $gameVariables.value(0008));
     		    		
 
             console.log("arrayVal ");

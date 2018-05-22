@@ -21,18 +21,25 @@
 	    		
 
 	    		
-	    	
 		    	var val_op = Number(args[0]);
 	    		var operacao = 'a';
+	    		var max = $gameVariables.value(21);
 
-	    		
-	    		$gameMap._interpreter.pluginCommand('iniciarVariavel', ['1', '50']);
-	    		
-		    	$gameMap._interpreter.pluginCommand('iniciarVariavel', ['2', '20']);
-		    	if (val_op == 4 || val_op == 3){
-		    		
-		    		$gameMap._interpreter.pluginCommand('iniciarVariavel', ['2', '11']);
-		    	}
+
+	    		switch(max){
+	    			case 1:
+		    			$gameMap._interpreter.pluginCommand('iniciarVariavel', ['1', '11']);	    		
+			    		$gameMap._interpreter.pluginCommand('iniciarVariavel', ['2', '11']);
+		    			break;
+		    		case 2:
+		    			$gameMap._interpreter.pluginCommand('iniciarVariavel', ['1', '100']);	    		
+		    			$gameMap._interpreter.pluginCommand('iniciarVariavel', ['2', '11']);
+		    			break;
+		    		case 3:
+		    			$gameMap._interpreter.pluginCommand('iniciarVariavel', ['1', '100']);	    		
+		    			$gameMap._interpreter.pluginCommand('iniciarVariavel', ['2', '100']);
+		    			break;
+	    		}		    	
 		    	
 		    	$gameMap._interpreter.pluginCommand('total', String([val_op]));
 				
