@@ -75,7 +75,7 @@
 
     				if(isPrime(val1)){
     					while(aux){
-    						val1 = randomNumber(50);
+    						val1 = randomNumber(100);
     						if(!isPrime(val1)){
     							$gameVariables.setValue(1, val1);
     							aux = false;
@@ -87,7 +87,7 @@
 
     				if(!(val1%val2==0)){
     					while(aux){
-    						val2 = randomNumber(11);
+    						val2 = randomNumber(21);
     						if(val1%val2==0){
     							$gameVariables.setValue(2, val2);
     							aux = false;
