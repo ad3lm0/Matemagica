@@ -25,7 +25,7 @@
 	    		var operacao = 'a';
 	    		var max = $gameVariables.value(21);
 
-	    		var face = number($gameVariables.value(23));
+	    		var face = Number($gameVariables.value(23));
 
 
 	    		switch(max){
