@@ -8,11 +8,11 @@ null,
 {"id":6,"expanded":true,"name":"StageOne","order":6,"parentId":1,"scrollX":1373.142857142857,"scrollY":1201.7142857142856},
 {"id":7,"expanded":false,"name":"StageOne Boss","order":7,"parentId":6,"scrollX":1373.142857142857,"scrollY":757.7142857142857},
 {"id":8,"expanded":true,"name":"StageTwo","order":8,"parentId":1,"scrollX":1373.142857142857,"scrollY":1201.7142857142856},
-{"id":9,"expanded":false,"name":"StageTwo Boss","order":9,"parentId":8,"scrollX":1373.142857142857,"scrollY":721.7142857142857},
-{"id":10,"expanded":true,"name":"StageThree","order":10,"parentId":1,"scrollX":1373.142857142857,"scrollY":1201.7142857142856},
-{"id":11,"expanded":false,"name":"StageThree Boss","order":11,"parentId":10,"scrollX":1373.142857142857,"scrollY":768},
+{"id":9,"expanded":false,"name":"StageTwo Boss","order":9,"parentId":8,"scrollX":1786.909090909091,"scrollY":999.2727272727274},
+{"id":10,"expanded":true,"name":"StageThree","order":10,"parentId":1,"scrollX":1786.909090909091,"scrollY":999.2727272727274},
+{"id":11,"expanded":false,"name":"StageThree Boss","order":11,"parentId":10,"scrollX":1786.909090909091,"scrollY":999.2727272727274},
 {"id":12,"expanded":true,"name":"StageFour","order":12,"parentId":1,"scrollX":1373.142857142857,"scrollY":889.7142857142857},
 {"id":13,"expanded":false,"name":"StageFour Boss","order":13,"parentId":12,"scrollX":1373.142857142857,"scrollY":721.7142857142857},
 {"id":14,"expanded":true,"name":"StageFinal","order":14,"parentId":1,"scrollX":1373.142857142857,"scrollY":1167.4285714285713},
-{"id":15,"expanded":false,"name":"StageFinal Boss","order":15,"parentId":14,"scrollX":1373.142857142857,"scrollY":798.8571428571428}
+{"id":15,"expanded":false,"name":"StageFinal Boss","order":15,"parentId":14,"scrollX":1784.7272727272727,"scrollY":977.4545454545455}
 ]

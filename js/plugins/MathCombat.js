@@ -25,6 +25,8 @@
 	    		var operacao = 'a';
 	    		var max = $gameVariables.value(21);
 
+	    		var face = number($gameVariables.value(23));
+
 
 	    		switch(max){
 	    			case 1:
@@ -82,14 +84,31 @@
 	    		$gameMessage.setChoiceCallback(function(responseIndex) {
 	    			if (Number(choices[responseIndex]) == Number($gameVariables.value(0003))){
 
+
+
 	    				$gameVariables.setValue(100, 0);
 	    				console.log($gameVariables.value(100));
-	    				setTimeout(function(){$gameMessage.add('Otímo, você acertou!');}, 1);
+	    				setTimeout(function(){
+	    					if (face == 1){
+								 $gameMessage.setFaceImage('FadaBash_R',5);
+	    					}else {
+	    						 $gameMessage.setFaceImage('Professora_R',1);
+	    					}
+	    					
+	    					$gameMessage.add('Otímo, você acertou!');
+	    				}, 1);
 	    			} else {
 
 	    				$gameVariables.setValue(100, 1);	
 	    				console.log($gameVariables.value(100));			
-		    			setTimeout(function(){$gameMessage.add('Vixe, você errou.');}, 1);
+		    			setTimeout(function(){
+		    				if (face == 1){
+	    					 $gameMessage.setFaceImage('FadaBash_R',1);
+	    					}else {
+	    						$gameMessage.setFaceImage('Professora_R',4);
+	    					}
+		    				$gameMessage.add('Vixe, você errou.');
+		    			}, 1);
 		    			}
 					});
 
