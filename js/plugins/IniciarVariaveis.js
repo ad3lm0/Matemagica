@@ -42,6 +42,7 @@
     		var operacao = Number(args[0]);
     		var total = 0;
     		var aux = true;
+            var val3 = 0;
 
 
 
@@ -52,16 +53,12 @@
     			case 2:
                 console.log("case2 ");
     				if (val1 < val2){
-                        console.log("if ");
-	    				while(aux){
-                            console.log("while ");
-	    					val2 = randomNumber(20);
-	    					if(val1 > val2){
-                                console.log("break ");
-	    						$gameVariables.setValue(2, val2);
-	    						aux = false;
-	    					}
-	    				}	    				
+                        val3 = val1;
+                        val1 = val2;
+                        val2 = val3;
+                        $gameVariables.setValue(0001, val1);
+                        $gameVariables.setValue(0002, val2);
+
 	    			}
                    
 
