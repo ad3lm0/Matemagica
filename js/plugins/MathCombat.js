@@ -108,6 +108,8 @@
 	    						$gameMessage.setFaceImage('Professora_R',4);
 	    					}
 		    				$gameMessage.add('Vixe, você errou.');
+		    				$gameMessage.add(Number($gameVariables.value(0001))  + operacao + Number($gameVariables.value(0002)) 
+			    		+ ' = ' + Number($gameVariables.value(0003)));
 		    			}, 1);
 		    			}
 					});
