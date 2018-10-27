@@ -19,7 +19,7 @@
  		{ 
  			var questions = [
  			"1. Qual a sua idade?",
-			"2. Qual o*seu sexo?",
+			"2. Qual o seu sexo?",
 			"3. Você sabe o que são jogos de RPG?",
 			"4. Você já jogou (ou joga) jogos de RPG?",
 			"5. Você gosta de jogos de RPG?",
@@ -95,7 +95,7 @@
 	 					if (counter == 18) { $gameVariables.setValue(40, Number(responseIndex)); }
 
 	 					content = readData(file); 			
-	 					content = content + questions[counter].replace("*", " ").replace("#", $gameVariables.value(31)) + ", " + choices[counter][responseIndex] + "\r\n";
+	 					content = content + questions[counter].replace("*", " ").replace("#", $gameVariables.value(31)) + "," + choices[counter][responseIndex] + "\r\n";
 	 					writeData(content, file);	 					
 	 					console.log(content);		
 	 				}, 1);

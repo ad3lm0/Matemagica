@@ -28,10 +28,10 @@
 			"6.Esse jogo estimulou você a gostar de matemática?",
 			"7.As explicações que existem nesse jogo foram*suficientes para você conseguir jogar?",
 			"8.Esse jogo contribuiu para o seu aprendizado em matemática?",
-			"9.Depois de jogar, você acredita que é possível gostar de*matemática através de jogos de computador/celular?",
+			"9.Depois de jogar...*Você acredita que é possível gostar de matemática*através de jogos de computador/celular?",
 			"10.Esse jogo melhorou a sua compreensão sobre as*operações básicas de matemática?",
 			"11.Você acha que depois de jogar ficou mais fácil resolver*as operações de " + dif[$gameVariables.value(40)] + "?",
-			"12.Depois de jogar, você acredita que é possível aprender*matemática através de jogos de computador/celular?",
+			"12.Depois de jogar...*Você acredita que é possível aprender matemática*através de jogos de computador/celular?",
 			"13.Esse jogo deu mais motivação para você aprender matemática?"
  			];
 
