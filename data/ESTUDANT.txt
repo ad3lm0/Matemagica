@@ -1,4 +1,0 @@
-KEY,VALUE
-NOME,Estudant
-INICIO,0h0m2s
-DIALOGO,0h0m8s
