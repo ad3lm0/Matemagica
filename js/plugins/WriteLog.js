@@ -16,6 +16,7 @@
  		_Game_Interpreter_pluginCommand.call(this, command, args); 
 
  		var content = "KEY,VALUE\r\n";
+ 		console.log(command);
 
  		if(command == "write") 
  		{ 
@@ -24,6 +25,7 @@
 
  				case "start":
  				//plugin command: write start
+ 				console.log("start");
  				content = content + "NOME," + $gameActors.actor(5).name() + "\r\n";
  				content = content + "INICIO," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
  				writeData(content, file);
@@ -33,6 +35,7 @@
  				//plugin command: write quest args[1] args[2]
 				//args[1] = TipoQuestionario
 				//args[2] = start/end
+				console.log("quest");
  				content = readData(file);
 
 				if (args[2] == "start")
@@ -51,6 +54,7 @@
 				//plugin command: write chat args[1] args[2]
 				//args[1] = TipoDialogo
 				//args[2] = start/end
+				console.log("chat");
  				content = readData(file);
  				
 				if (args[2] == "start")
@@ -68,6 +72,7 @@
  				case "mathemathics":
  				//plugin command: write mathemathics args[1]
 				//args[1] = TipoOpinião
+				console.log("mathemathics");
  				content = readData(file); 		
  				content = content + "MATEMÁTICA," + args[1] + "\r\n";
  				writeData(content, file);
@@ -76,6 +81,7 @@
  				case "easterEgg":
  				//plugin command: write easterEgg args[1]
 				//args[1] = start/end
+				console.log("easterEgg");
  				content = readData(file); 		
 
  				if (args[1] == "start")
@@ -97,6 +103,7 @@
  				//plugin command: write stage args[1] args[2]
 				//args[1] = TipoEstagio
 				//args[2] = start/end
+				console.log("stage");
  				content = readData(file);
 
  				if (args[2] == "start")
@@ -118,6 +125,7 @@
 
  				case "forceEnd":
  				//plugin command: write forceEnd
+ 				console.log("forceEnd");
  				content = readData(file);
  				content = content + "MONSTROS TOTAL," + $gameVariables.value(32) + "\r\n";
  				content = content + "MONSTROS FUGAS," + $gameVariables.value(33) + "\r\n";
@@ -130,6 +138,7 @@
 
  				case "end":
  				//plugin command: write end
+ 				console.log("end");
  				content = readData(file);
  				content = content + "FIM," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
  				writeData(content, file);
@@ -167,7 +176,7 @@
 
  function getTimeFormatted (hour, minute, second)
  {
- 	return getTime(hour) + ":" + getTime(minute) + ":" getTime(second);
+ 	return getTime(hour) + ":" + getTime(minute) + ":" + getTime(second);
  };
 
  function getTime (interval)

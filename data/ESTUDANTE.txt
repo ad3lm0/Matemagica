@@ -1,0 +1,29 @@
+KEY,VALUE
+NOME,Estudante
+INICIO,00:00:04
+QUESTIONÁRIO sociodemografico INICIO,00:00:05
+1. Qual a sua idade?, 10
+2. Qual o seu sexo?,Feminino
+3. Você sabe o que são jogos de RPG?,Sim
+4. Você já jogou (ou joga) jogos de RPG?,Sim
+5. Você gosta de jogos de RPG?,Sim
+6. Você já jogou (ou joga) jogos de RPG no computador/celular?,Sim
+7. O quanto você gosta de jogos de computador/celular?,Muito
+8. Você tem computador/celular?,Sim
+9. Você tem acesso ao computador/celular em casa?,Sim
+10. Você tem acesso à internet em casa?,Sim
+11. Qual o seu ano escolar?,2º Ano
+12. Você repetiu o 2º ano escolar?,Sim
+13. O quanto você gosta de matemática?,Muito
+14. Você acredita que é possível gostar de matemática através de jogos de computador/celular?,Com certeza
+15. Você pede ajuda para resolver as tarefas de matemática?,Sim
+16. O quanto você gosta das aulas de matemática?,Muito
+17. Você sabe o que são as quatro operações matemáticas?,Sim
+18. Você sente dificuldade para resolver alguma operação matemática?,Sim
+19. Qual dessas operações você sente MAIS dificuldade?,Todas
+20. Qual dessas operações você sente MAIS facilidade?,Todas
+21. A sua última nota de matemática foi?,Maior ou igual a 8
+22. Você acredita que é possível aprender matemática através de jogos de computador/celular?,Com certeza
+23. Você gostaria de aprender matemática jogando no computador/celular?,Com certeza
+QUESTIONÁRIO sociodemografico FIM,00:01:59
+DIÁLOGO ApresentacaoProfessora INICIO,00:02:36
