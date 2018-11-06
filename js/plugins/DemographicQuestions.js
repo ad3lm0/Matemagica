@@ -31,16 +31,16 @@
 			"11. Qual o seu ano escolar?",
 			"12. Você repetiu o #º ano escolar?",
 			"13. O quanto você gosta de matemática?",
-			"14. Você acredita que é possível gostar de matemática através*de jogos de computador/celular?",
+			"14. Você acredita que é possível gostar de matemática através_de jogos de computador/celular?",
 			"15. Você pede ajuda para resolver as tarefas de matemática?",
 			"16. O quanto você gosta das aulas de matemática?",
 			"17. Você sabe o que são as quatro operações matemáticas?",
-			"18. Você sente dificuldade para resolver alguma*operação matemática?",
+			"18. Você sente dificuldade para resolver alguma_operação matemática?",
 			"19. Qual dessas operações você sente MAIS dificuldade?",
 			"20. Qual dessas operações você sente MAIS facilidade?",
 			"21. A sua última nota de matemática foi?",
-			"22. Você acredita que é possível aprender matemática através*de jogos de computador/celular?",
-			"23. Você gostaria de aprender matemática jogando*no computador/celular?"
+			"22. Você acredita que é possível aprender matemática através_de jogos de computador/celular?",
+			"23. Você gostaria de aprender matemática jogando_no computador/celular?"
  			];
 
  			var choices = [
@@ -83,7 +83,7 @@
  			else if ($gameSwitches.value(33))
  			{
 	 			$gameMap._interpreter.setupChoices([choices[counter]], -1, -1);
-	 			$gameMessage.add(questions[counter].replace("*", "\n").replace("#", $gameVariables.value(31)));
+	 			$gameMessage.add(questions[counter].replace(/_/g, "\n").replace("#", $gameVariables.value(31)));
 	 			this.setWaitMode('message');	 		
 
 	 			$gameMessage.setChoiceCallback(function(responseIndex) 
@@ -95,9 +95,8 @@
 	 					if (counter == 18) { $gameVariables.setValue(40, Number(responseIndex)); }
 
 	 					content = readData(file); 			
-	 					content = content + questions[counter].replace("*", " ").replace("#", $gameVariables.value(31)) + "," + choices[counter][responseIndex] + "\r\n";
-	 					writeData(content, file);	 					
-	 					console.log(content);		
+	 					content = content + questions[counter].replace(/_/g, " ").replace("#", $gameVariables.value(31)) + "," + choices[counter][responseIndex] + "\r\n";
+	 					writeData(content, file);	 						
 	 				}, 1);
 	 			});	
  			} 

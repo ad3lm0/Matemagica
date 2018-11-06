@@ -25,7 +25,9 @@
 
  				case "start":
  				//plugin command: write start
+
  				console.log("start");
+
  				content = content + "NOME," + $gameActors.actor(5).name() + "\r\n";
  				content = content + "INICIO," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
  				writeData(content, file);
@@ -35,16 +37,19 @@
  				//plugin command: write quest args[1] args[2]
 				//args[1] = TipoQuestionario
 				//args[2] = start/end
-				console.log("quest");
+
+				console.log("quest");				
  				content = readData(file);
 
 				if (args[2] == "start")
  				{
+ 					console.log("quest start");
  					content = content + "QUESTIONÁRIO " + args[1] + " INICIO," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
  				}
 
  				if (args[2] == "end")
  				{
+ 					console.log("quest end");
 					content = content + "QUESTIONÁRIO " + args[1] + " FIM," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
  				}
  				writeData(content, file);
@@ -59,11 +64,13 @@
  				
 				if (args[2] == "start")
 				{
+					console.log("chat start");
 					content = content + "DIÁLOGO " + args[1] + " INICIO," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
 				}
 
 				if (args[2] == "end")
 				{
+					console.log("chat start");
 					content = content + "DIÁLOGO " + args[1] + " FIM," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
 				}
 				writeData(content, file);
@@ -72,6 +79,7 @@
  				case "mathemathics":
  				//plugin command: write mathemathics args[1]
 				//args[1] = TipoOpinião
+
 				console.log("mathemathics");
  				content = readData(file); 		
  				content = content + "MATEMÁTICA," + args[1] + "\r\n";
@@ -81,16 +89,19 @@
  				case "easterEgg":
  				//plugin command: write easterEgg args[1]
 				//args[1] = start/end
+
 				console.log("easterEgg");
  				content = readData(file); 		
 
  				if (args[1] == "start")
  				{
+ 					console.log("easterEgg start");
  					content = content + "ENCONTROU," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
  				}
 
  				if (args[1] == "end")
  				{
+ 					console.log("easterEgg end");
  					content = content + "CHARADAS TOTAL," + "10" + "\r\n";
  					content = content + "CHARADAS ACERTOS," + $gameVariables.value(38) + "\r\n";
  					content = content + "CHARADAS ERROS," + $gameVariables.value(37) + "\r\n";
@@ -103,16 +114,19 @@
  				//plugin command: write stage args[1] args[2]
 				//args[1] = TipoEstagio
 				//args[2] = start/end
+
 				console.log("stage");
  				content = readData(file);
 
  				if (args[2] == "start")
  				{
+ 					console.log("stage start");
  					content = content + "ESTÁGIO " + args[1] + " INICIO," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
  				}
 
  				if (args[2] == "end")
  				{
+ 					console.log("stage end");
  					content = content + "MONSTROS TOTAL," + $gameVariables.value(32) + "\r\n";
 	 				content = content + "MONSTROS FUGAS," + $gameVariables.value(33) + "\r\n";
 	 				content = content + "MONSTROS VITORIA," + $gameVariables.value(34) + "\r\n";
@@ -141,6 +155,16 @@
  				console.log("end");
  				content = readData(file);
  				content = content + "FIM," + getTimeFormatted($gameVariables.value(26), $gameVariables.value(27), $gameVariables.value(28)) + "\r\n";
+ 				writeData(content, file);
+ 				break;
+
+ 				case "misc":
+ 				//plugin command: write misc args[1] args[2]
+ 				//args[1] = TipoAcao
+ 				//args[2] = ValorAcao
+ 				console.log("misc");
+ 				content = readData(file);
+ 				content = content + args[1] + "," + args[2] + "\r\n";
  				writeData(content, file);
  				break;
  			}
